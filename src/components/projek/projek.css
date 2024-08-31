@@ -1,0 +1,121 @@
+.projek {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.projekImage {
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.projekImage:hover{
+    transform: scale(1.02);
+}
+
+.projekContainer {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.porjectCards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.projekCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: #00000040;
+    border-radius: 20px;
+    margin: 10px;
+    border: 0.5px solid #077eff;
+    width: 100%;
+    max-width: 250px; 
+    min-height: 350px; 
+    box-sizing: border-box;
+}
+
+.judulProjek {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #077eff;
+    text-align: center;
+}
+
+.deskripsiProjek {
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center; 
+    margin-top: 10px; 
+    flex-grow: 1; 
+}
+
+.projekButon {
+    margin-top: 20px;
+    padding: 8px 28px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    background: #077eff;
+    border-radius: 20px;
+    color: #fff;
+    align-self: stretch; 
+}
+
+.projekButon:hover {
+    background: #044f9f;
+}
+
+@media (max-width: 768px) {
+    .porjectCards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .projekImage {
+        width: 120px;
+    }
+
+    .projekCard {
+        max-width: 150px;
+    }
+
+    .judulProjek {
+        font-size: 16px;
+    }
+
+    .deskripsiProjek {
+        font-size: 12px;
+    }
+
+    .projekButon {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .porjectCards {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .projekImage{
+        width: 150px;
+        aspect-ratio: 1/1;
+    }
+
+    .projekCard {
+        width: 100%;
+        max-width: 200px; 
+    }
+}

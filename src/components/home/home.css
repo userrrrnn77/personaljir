@@ -1,0 +1,105 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.bgGelap {
+    width: 100%;
+    height: 100vh;
+    background: #0219329a;
+    position: absolute;
+}
+
+.homeContainet {
+    z-index: 2;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    text-align: center;
+    gap: 10px;
+}
+
+.titleHome {
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.deskHome {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.buttonContainerHome {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttonHome {
+    padding: 15px;
+    padding-right: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #077eff;
+    color: #fff;
+}
+
+.iconsHm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    ;
+}
+
+.iconCuy {
+    font-size: 20px;
+}
+
+.buttonContainerHome:hover .iconsHm {
+    animation: moveRight 0.5s forwards;
+}
+
+.buttonContainerHome:hover .buttonHome{
+    background: #0219329a;
+    transition: all 0.3s ease-out;
+}
+
+@keyframes moveRight {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(12px);
+    }
+}
+
+@media (max-width: 480px){
+    .titleHome{
+        font-size: 24px;
+    }
+    .deskHome{
+        font-size: 12px;
+    }
+    .homeContainet{
+        width: 400px;
+    }
+}

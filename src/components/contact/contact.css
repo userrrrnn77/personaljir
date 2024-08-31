@@ -1,0 +1,163 @@
+.contact {
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.getCuk {
+    font-size: 46px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.contactContainer {
+    padding: 20px;
+    border-radius: 60px;
+}
+
+.mapsCon {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 12px #ffffff16;
+    border-radius: 40px;
+}
+
+.mapsCuy {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1) invert(1);
+    border: none;
+    outline: none;
+    border-radius: 40px
+}
+
+.contactMe {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.kiri {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.kanan {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.kirimText {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #0772ff;
+    font-weight: 300;
+    gap: 5px;
+}
+
+.judulIkon {
+    color: #fff;
+}
+
+.kiri ul li {
+    list-style-type: none;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.kiri ul {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.iconRinci {
+    color: #0772ff;
+}
+
+.inputAnjing {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+}
+
+.textArea{
+    resize: none;
+    font-family: "Poppins", sans-serif;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .contactMe {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .kiri, .kanan {
+        width: 100%;
+    }
+
+    .getCuk {
+        font-size: 36px;
+    }
+
+    .kirimText {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .getCuk {
+        font-size: 28px;
+    }
+
+    .mapsCon {
+        height: 200px;
+    }
+
+    .contactMe {
+        padding: 10px;
+    }
+
+    .kirimText {
+        font-size: 18px;
+    }
+
+    .inputAnjing {
+        padding: 8px;
+    }
+
+    .textArea {
+        height: 80px;
+    }
+
+    .btnPri {
+        padding: 6px 15px;
+    }
+
+    .butonIkon {
+        font-size: 16px;
+    }
+}

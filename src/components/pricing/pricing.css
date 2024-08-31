@@ -1,0 +1,238 @@
+.pricing {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.pricingContainer {
+    padding: 20px;
+}
+
+.pricingCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.pricingCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background: #0e0e0e81;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 280px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border: 0.2px solid #888;
+}
+
+.pricingCard:hover {
+    transform: scale(1.04);
+    border: 0.2px solid #077eff;
+}
+
+.cardTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardDesk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deskCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconTitlePri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #077eff;
+    border-radius: 50%;
+}
+
+.iconCardPri {
+    font-size: 22px;
+}
+
+.titleTextPri {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.ourFeatures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.iconFeatures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #077eff;
+    border-radius: 50%;
+}
+
+.ikonFitur {
+    font-size: 22px;
+}
+
+.TitleFitur {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.btnPri {
+    padding: 8px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #077eff;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btnPri:hover {
+    transform: scale(1.09);
+}
+
+.butonIkon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.plansCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plansCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px;
+    background: #00000027;
+    border-radius: 20px;
+    gap: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border: #888 solid 0.3px;
+}
+
+.plansCard:hover {
+    transform: scale(1.02);
+    border: 0.3px solid #077eff;
+}
+
+.isiCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.judulCard {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: #077eff;
+}
+
+.hargaCard {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.deskCard {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .pricingCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .pricingCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plansCards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .judulCard {
+        font-size: 36px;
+    }
+
+    .titleTextPri {
+        font-size: 18px;
+    }
+
+    .iconCardPri {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .pricingCards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 8px;
+    }
+    .plansCards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .titleTextPri {
+        font-size: 22px;
+    }
+
+    .titleTextPri,
+    .iconCardPri {
+        font-size: 18px;
+    }
+
+    .deskCard{
+        font-size: 12px;
+    }
+    
+}

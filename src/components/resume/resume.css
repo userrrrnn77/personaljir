@@ -1,0 +1,231 @@
+.resume {
+    margin-top: 60px;
+}
+
+.resumeContainer {
+    padding: 30px;
+}
+
+.resumeTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.gradIcon {
+    padding: 10px;
+    background: #0773ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.gradIcon {
+    font-size: 26px;
+}
+
+.judulGrad {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.resumeCards {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1rf);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.resumeCard {
+    padding: 40px;
+    background: linear-gradient(46deg, #1e1e1f 30%, #0e0e0e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 0.5px solid #fff;
+}
+
+.resumeCard:hover {
+    transform: scale(1.03);
+    border: 0.5px solid #077eff;
+}
+
+.cardTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.iconCard {
+    padding: 5px;
+    background: #0773ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardIcon {
+    font-size: 22px;
+}
+
+.namaSekolah {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.deskripsi {
+    font-size: 14px;
+}
+
+.marginTop {
+    margin-top: 40px;
+}
+
+.expContainer {
+    padding: 20px;
+    border-radius: 20px;
+    background: #0e0e0e63;
+    margin-top: 40px;
+}
+
+.expItem {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.garisDanBulat {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.bulat {
+    width: 15px;
+    height: 15px;
+    background: #0773ff;
+    border-radius: 50%;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+.garis {
+    width: 2px;
+    height: 320px;
+    background: #fff;
+    position: absolute;
+    top: 15px;
+}
+
+.textsExp {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.titleExp {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.spanExp {
+    font-size: 18px;
+    color: #0773ff;
+    font-weight: 200;
+}
+
+.jabatan {
+    font-size: 22px;
+    font-weight: 400;
+    color: #0773ff;
+}
+
+.deskPertama {
+    font-size: 14px;
+}
+
+.DeskDua {
+    font-size: 14px;
+}
+
+.pendek {
+    height: 220px;
+}
+
+.marginBottom {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .garis {
+        height: 500px;
+    }
+
+    .pendek {
+        height: 290px;
+    }
+
+    .resumeCards {
+        display: grid;
+    }
+
+    .titleExp {
+        font-size: 18px;
+    }
+
+    .spanExp {
+        font-size: 12px;
+    }
+
+    .jabatan {
+        font-size: 16px;
+    }
+
+    .bulat {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .garis {
+        height: 900px;
+    }
+
+    .pendek {
+        height: 500px;
+    }
+
+    .resumeCards {
+        display: grid;
+    }
+
+    .titleExp {
+        font-size: 18px;
+    }
+
+    .spanExp {
+        font-size: 12px;
+    }
+
+    .jabatan {
+        font-size: 16px;
+    }
+
+    .bulat {
+        margin-top: 5px;
+    }
+}

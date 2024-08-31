@@ -1,0 +1,93 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+}
+
+.navbarContainer {
+    padding: 10px 20px;
+    display: flex;
+    background: #032f5e;
+    justify-content: center;
+    border-radius: 50px;
+    gap: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    transition: all 0.5s ease-out;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    position: relative;
+}
+
+.icons:hover {
+    background: #077eff;
+    border-radius: 50%;
+}
+
+.icons:hover .popUpNotif {
+    opacity: 1;
+    transform: translateY(0);
+    animation: dropDown 0.3s ease-out forwards;
+}
+
+@keyframes dropDown {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.iconNav {
+    font-size: 22px;
+}
+
+.popUpNotif {
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -50px;
+    background: #079eff;
+    border-radius: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.popUpNotif::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #079eff;
+}
+
+.popUp {
+    font-size: 10px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}

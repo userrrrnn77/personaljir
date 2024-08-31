@@ -1,0 +1,109 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 60px;
+}
+
+.titleAbout {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #077eff;
+}
+
+.aboutContainer {
+    padding: 25px;
+}
+
+.fotoAbout {
+    width: 500px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.fotoAbout:hover {
+    border-radius: 50%;
+}
+
+.aboutMe {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aboutTexts {
+    width: 35%;
+}
+
+.namaSaya {
+    font-size: 33px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.tentangSaya {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+@media (max-width: 768px) {
+    .about {
+        margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotoAbout {
+        width: 500px;
+    }
+
+    .aboutTexts {
+        width: 90%;
+        text-align: center;
+    }
+
+    .namaSaya {
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    .tentangSaya {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:480px) {
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        margin-top: 100px;
+    }
+
+    .fotoAbout {
+        width: 350px;
+    }
+
+    .aboutTexts {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .namaSaya {
+        text-align: center;
+        margin: 5px;
+    }
+}
